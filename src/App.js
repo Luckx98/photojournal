@@ -1,22 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BannerImage from "./components/BannerImage";
+import AlbumMaker from "./components/AlbumMaker";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BannerImage />
+        <h1>Welcome to my photojournal</h1>
+        <h3>Lucas Macedo</h3>
+        <AlbumMaker />
       </header>
     </div>
   );
